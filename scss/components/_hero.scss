@@ -1,0 +1,223 @@
+.hero {
+  margin: 0 auto;
+  padding: 10px;
+
+  &__image {
+    position: relative;
+    height: 366px;
+  }
+
+  &__layer {
+    position: absolute;
+    max-width: 366px;
+  }
+
+  &__island {
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    border-radius: 16px;
+    width: 139px;
+    height: 153px;
+  }
+
+  &__mountains {
+    position: absolute;
+    left: 35px;
+    top: 200px;
+    border-radius: 16px;
+    width: 139px;
+    height: 153px;
+  }
+
+  &__girl {
+    position: absolute;
+    left: 200px;
+    top: 110px;
+    border-radius: 16px;
+    width: 139px;
+    height: 205px;
+  }
+}
+
+.social {
+  margin: 0 auto;
+  margin-top: 30px;
+  display: grid;
+  place-items: center;
+
+  &__button--primary {
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    padding: 14px 30px;
+    margin-bottom: 20px;
+    width: 224px;
+    height: 56px;
+    border: none;
+  }
+
+  &__icon {
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+  }
+
+  &__title--button {
+    font-family: $font-family-base;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+    color: $text-color;
+  }
+
+  &__title {
+    font-family: $font-family-base;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: $title-color;
+  }
+
+  &__description {
+    font-family: $font-family-base;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: $transparent-color;
+  }
+
+  &__button--first {
+    font-family: $font-family-base;
+    border-radius: 100px;
+    border: none;
+    padding: 24px 32px;
+    margin-bottom: 20px;
+    width: 378px;
+    height: 65px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1), 0 5px 11px 0 rgba(0, 0, 0, 0.1),
+      0 20px 20px 0 rgba(0, 0, 0, 0.09), 0 45px 27px 0 rgba(0, 0, 0, 0.05),
+      0 81px 32px 0 rgba(0, 0, 0, 0.01), 0 126px 35px 0 rgba(0, 0, 0, 0);
+    background: #5d50c6;
+    color: $secondary-color;
+  }
+
+  &__icon--media {
+    width: 21px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  &__button--secondary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-family-base;
+    border: 1px solid #eee;
+    border-radius: 100px;
+    padding: 24px 32px;
+    width: 378px;
+    height: 72px;
+    background: $text-color;
+    color: $secondary-color;
+  }
+
+  &__media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 20px 30px 0px 30px;
+
+    &__layer {
+      max-width: 708px;
+    }
+
+    &__island {
+      width: 222px;
+      height: 250px;
+      left: 130px;
+    }
+
+    &__mountains {
+      width: 222px;
+      height: 250px;
+      top: 300px;
+      left: 130px;
+    }
+
+    &__girl {
+      width: 222px;
+      height: 350px;
+      left: 400px;
+    }
+  }
+
+  .social {
+    margin-top: 250px;
+
+    &__buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    &__button--first {
+      width: 181px;
+      height: 70px;
+    }
+
+    &__button--secondary {
+      width: 181px;
+      height: 70px;
+    }
+  }
+}
+
+@media (min-width: 1140px) {
+  .hero {
+    padding: 20px 130px 0px 130px;
+    max-width: 100%;
+
+    &__image {
+      width: 772px;
+    }
+    
+    &__social--group {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__social--group {
+      justify-content: space-between;
+    }
+  }
+
+  .social {
+    margin: 0;
+    max-width: 322px;
+    gap: 40px;
+
+    &__button--first {
+      width: 140px;
+    }
+
+    &__button--secondary {
+      width: 140px;
+    }
+  }
+
+  .social__media {
+    margin-top: 220px;
+    gap: 50px;
+  }
+}

@@ -1,0 +1,131 @@
+.footer {
+  margin: 0 auto;
+  padding: 10px;
+  margin-top: 50px;
+
+  &__logotype {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-family: $font-family-base;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 167%;
+    color: $title-color;
+  }
+
+  &__description {
+    font-family: $font-family-base;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 160%;
+    color: $transparent-color;
+  }
+
+  &__icons {
+    display: flex;
+    margin-top: 30px;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+
+  &__button {
+    border-radius: 50%;
+    border: none;
+    background-color: $background-color;
+    color: $secondary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+  }
+
+  &__social--networks {
+    width: 27px;
+    height: 27px;
+    fill: $secondary-color;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__information {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__information--more {
+    width: 24px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  &__icon {
+    height: 19px;
+    width: 19px;
+  }
+
+  &__arrow {
+    font-family: $font-family-base;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 120%;
+    color: $title-color;
+  }
+
+  &__contact {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 20px 30px 20px 30px;
+    margin-bottom: 40px;
+
+    &__information {
+      flex-direction: column;
+    }
+
+    &__information--more {
+      display: none;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__contact {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 20px;
+      font-family: $font-family-base;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 160%;
+      color: $transparent-color;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: 1140px) {
+  .footer {
+    padding: 20px 130px 0px 130px;
+    max-width: 100%;
+  }
+}

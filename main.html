@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header">
+          <div class="header__buttons">
+            <button class="header__button">Log in</button
+            ><button class="header__button--secondary">Sign Up</button>
+          </div>
+          <div class="header__logotype">
+            <img src="./picture/logo.png" alt="logotype" />
+            <span class="header__text">Travlog</span>
+          </div>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__name">Home</li>
+              <li class="navigation__name">Discover</li>
+              <li class="navigation__name">Special Deals</li>
+              <li class="navigation__name">Contact</li>
+            </ul>
+          </nav>
+          <button class="button">
+            <svg class="button__menu" width="40" height="40" fill="none">
+              <use href="/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="registration">
+            <button>Log In</button><button>Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <section class="hero">
+        <div class="hero__social--group">
+          <div class="hero__image">
+            <img
+              class="hero__layer"
+              src="./picture/layer.png"
+              alt="layer"
+            /><img
+              class="hero__island"
+              src="./picture/island.png"
+              alt="island"
+            /><img
+              class="hero__mountains"
+              src="./picture/mountains.png"
+              alt="mountains"
+            /><img class="hero__girl" src="./picture/girl.png" alt="girl" />
+          </div>
+          <div class="social">
+            <button class="social__button--primary">
+              <p class="social__title--button">Explore the world!</p>
+              <svg class="social__icon">
+                <use href="./symbol-defs.svg#icon-backpack"></use>
+              </svg>
+            </button>
+            <h1 class="social__title">Travel top destination of the world</h1>
+            <p class="social__description">
+              We always make our customer happy by providing as many choices as
+              possible
+            </p>
+            <div class="social__buttons">
+              <button class="social__button--first">Get Started</button
+              ><button class="social__button--secondary">
+                <svg class="social__icon--media">
+                  <use href="./symbol-defs.svg#icon-watch"></use>
+                </svg>
+                Watch Demo
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="social__media">
+          <img src="./picture/tripadvisor.png" alt="tripadvisor" /><img
+            src="./picture/expedia.png"
+            alt="expedia"
+          /><img src="./picture/bookingcom.png" alt="booking" /><img
+            src="./picture/airbnb.png"
+            alt="airbnb"
+          /><img src="./picture/orbitz.png" alt="orbitz" />
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <section class="services">
+        <div class="services__title">
+          <h2 class="services__title--color">Services</h2>
+          <h1 class="services__title--main">
+            Our top value categories for you
+          </h1>
+        </div>
+        <div class="conditions">
+          <img src="./picture/destination.png" alt="destination" />
+          <h3 class="conditions__title">Best Tour Guide</h3>
+          <p class="conditions__text">
+            What looked like a small patch of purple grass, above five feet.
+          </p>
+        </div>
+        <div class="conditions">
+          <img src="./picture/booking.png" alt="booking" />
+          <h3 class="conditions__title">Easy Booking</h3>
+          <p class="conditions__text">
+            Square, was moving across the sand in their direction.
+          </p>
+        </div>
+        <div class="conditions">
+          <img src="./picture/weather.png" alt="weather" />
+          <h3 class="conditions__title">Weather Forecast</h3>
+          <p class="conditions__text">
+            What looked like a small patch of purple grass, above five feet.
+          </p>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <section class="destination">
+        <div class="destination__main">
+          <div>
+            <h2 class="destination__title--color">Top Destination</h2>
+            <h1 class="destination__title--main">Explore top destination</h1>
+          </div>
+          <div class="destination__buttons">
+            <button class="destination__button">
+              <svg class="destination__icon">
+                <use href="./symbol-defs.svg#icon-arrow-left"></use>
+              </svg></button
+            ><button class="destination__button--secondary">
+              <svg class="destination__icon">
+                <use href="./symbol-defs.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <ul class="card__products">
+            <li class="card__product">
+              <img
+                class="card__picture"
+                src="./picture/beach.png"
+                alt="beach"
+              />
+              <div class="card__description">
+                <span class="card__title">$550.16</span>
+                <h3 class="card__name">Paradise Beach, Bantayan Island</h3>
+                <p class="card__city">Rome, Italy</p>
+                <div class="card__opinion">
+                  <p class="card__rating">4.8</p>
+                  <svg class="card__icon">
+                    <use href="./symbol-defs.svg#icon-stars"></use>
+                  </svg>
+                </div>
+              </div>
+            </li>
+            <li class="card__product">
+              <img class="card__picture" src="./picture/fish.png" alt="fish" />
+              <div class="card__description">
+                <span class="card__title">$20.99</span>
+                <h3 class="card__name">Ocean with full of Colors</h3>
+                <p class="card__city">Maldives</p>
+                <div class="card__opinion">
+                  <p class="card__rating">4.5</p>
+                  <svg class="card__icon">
+                    <use href="./symbol-defs.svg#icon-stars"></use>
+                  </svg>
+                </div>
+              </div>
+            </li>
+            <li class="card__product">
+              <img
+                class="card__picture"
+                src="./picture/fog.png"
+                alt="mountains"
+              />
+              <div class="card__description">
+                <span class="card__title">$150.99</span>
+                <h3 class="card__name">Mountain View, Above the cloud</h3>
+                <p class="card__city">United Arab Emeries</p>
+                <div class="card__opinion">
+                  <p class="card__rating">5.0</p>
+                  <svg class="card__icon">
+                    <use href="./symbol-defs.svg#icon-stars"></use>
+                  </svg>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <section class="location">
+        <img class="location__img" src="./picture/tourist.png" alt="tourist" />
+        <div class="location__content">
+          <div class="location__titles">
+            <span class="location__title">Travel Point</span>
+            <h2 class="location__title--main">
+              We helping you find your dream location
+            </h2>
+            <p class="location__text">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC.
+            </p>
+          </div>
+          <ul class="location__list">
+            <li class="location__card">
+              <span class="location__amount">500+</span>
+              <p class="location__name">Holiday Package</p>
+            </li>
+            <li class="location__card">
+              <span class="location__amount">100</span>
+              <p class="location__name">Luxury Hotel</p>
+            </li>
+            <li class="location__card">
+              <span class="location__amount">7</span>
+              <p class="location__name">Premium Airlines</p>
+            </li>
+            <li class="location__card">
+              <span class="location__amount">2k+</span>
+              <p class="location__name">Happy Customer</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <section class="features">
+        <img
+          class="features__img"
+          src="./picture/selection.png"
+          alt="selection"
+        />
+        <div>
+          <div class="features__titles">
+            <span class="features__title">Travel Point</span>
+            <h2 class="features__title--main">
+              We helping you find your dream location
+            </h2>
+            <p class="features__text">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC.
+            </p>
+          </div>
+          <ul>
+            <li class="features__card">
+              <svg class="features__icon">
+                <use href="./symbol-defs.svg#icon-mark"></use>
+              </svg>
+              <div>
+                <h3 class="features__description">We offer best services</h3>
+                <p class="features__anagraph">
+                  Lorem Ipsum is not simply random text
+                </p>
+              </div>
+            </li>
+            <li class="features__card">
+              <svg class="features__icon">
+                <use href="./symbol-defs.svg#icon-calendar"></use>
+              </svg>
+              <div>
+                <h3 class="features__description">Schedule your trip</h3>
+                <p class="features__anagraph">
+                  It has roots in a piece of classical
+                </p>
+              </div>
+            </li>
+            <li class="features__card">
+              <svg class="features__icon">
+                <use href="./symbol-defs.svg#icon-ticket"></use>
+              </svg>
+              <div>
+                <h3 class="features__description">Get discounted coupons</h3>
+                <p class="features__anagraph">
+                  Lorem Ipsum is not simply random text
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <section class="testimonials">
+        <div class="testimonials__titles">
+          <span class="testimonials__name">Testimonials</span>
+          <h2 class="testimonials__title">Trust our clients</h2>
+        </div>
+        <img
+          class="testimonials__img"
+          src="./picture/clients.png"
+          alt="clients"
+        />
+        <div class="testimonials__information">
+          <span class="testimonials__person"
+            >Mark Smith / Travel Enthusiast</span
+          >
+          <div class="testimonials__ratings">
+            <svg class="testimonials__rating">
+              <use href="./symbol-defs.svg#icon-stars"></use>
+            </svg>
+            <svg class="testimonials__rating">
+              <use href="./symbol-defs.svg#icon-stars"></use>
+            </svg>
+            <svg class="testimonials__rating">
+              <use href="./symbol-defs.svg#icon-stars"></use>
+            </svg>
+            <svg class="testimonials__rating">
+              <use href="./symbol-defs.svg#icon-stars"></use>
+            </svg>
+            <svg class="testimonials__rating">
+              <use href="./symbol-defs.svg#icon-stars"></use>
+            </svg>
+          </div>
+          <p class="testimonials__text">
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC.
+          </p>
+          <div class="testimonials__items">
+            <span class="testimonials__switch"></span
+            ><span class="testimonials__switch"></span
+            ><span class="testimonials__switch"></span>
+          </div>
+          <div class="testimonials__buttons">
+            <button class="testimonials__button">
+              <svg class="testimonials__icon">
+                <use href="./symbol-defs.svg#icon-arrow-left"></use>
+              </svg></button
+            ><button class="testimonials__button--secondary">
+              <svg class="testimonials__icon">
+                <use href="./symbol-defs.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <section class="subscribe">
+        <div class="subscribe__titles">
+          <span class="subscribe__name">subscribe to our newsletter</span>
+          <h2 class="subscribe__title">
+            Prepare yourself & let’s explore the beauty of the world
+          </h2>
+        </div>
+        <form class="subscribe__form">
+          <label class="subscribe__label">
+            <input
+              class="subscribe__input"
+              type="text"
+              placeholder="Your Email"
+            />
+          </label>
+          <button class="subscribe__button" type="submit">Subscribe</button>
+        </form>
+      </section>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="footer__logotype">
+            <img src="./picture/logo.png" alt="logotype" />
+            <span class="footer__text">Travlog</span>
+          </div>
+          <p class="footer__description">
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC.
+          </p>
+          <div class="footer__icons">
+            <button class="footer__button">
+              <svg class="footer__social--networks">
+                <use href="./symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </button>
+            <button class="footer__button">
+              <svg class="footer__social--networks">
+                <use href="./symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </button>
+            <button class="footer__button">
+              <svg class="footer__social--networks">
+                <use href="./symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <ul class="footer__list">
+              <li class="footer__information">
+                <h3 class="footer__arrow">Company</h3>
+                <ul class="footer__contact">
+                  <li>About</li>
+                  <li>Career</li>
+                  <li>Mobile</li>
+                </ul>
+                <button class="footer__information--more">
+                  <svg class="footer__icon">
+                    <use href="./symbol-defs.svg#icon-arrow-left"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="footer__information">
+                <h3 class="footer__arrow">Contact Us</h3>
+                <ul class="footer__contact">
+                  <li>Partner with us</li>
+                  <li>FAQ’s</li>
+                  <li>Blog</li>
+                </ul>
+                <button class="footer__information--more">
+                  <svg class="footer__icon">
+                    <use href="./symbol-defs.svg#icon-arrow-left"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="footer__information">
+                <h3 class="footer__arrow">Meet Us</h3>
+                <ul class="footer__contact">
+                  <li>+00 00 0000 00000s</li>
+                  <li>info@travlog.com</li>
+                  <li>205. R Street, New Yerk</li>
+                </ul>
+                <button class="footer__information--more">
+                  <svg class="footer__icon">
+                    <use href="./symbol-defs.svg#icon-arrow-left"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

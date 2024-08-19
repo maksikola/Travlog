@@ -1,0 +1,145 @@
+.testimonials {
+  margin: 0 auto;
+  padding: 10px;
+
+  &__titles {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  &__name {
+    font-family: $font-family-base;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: $text-color;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-family: $font-family-base;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    color: $title-color;
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__person {
+    font-family: $font-family-base;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 120%;
+    text-align: center;
+    color: $bright-color;
+  }
+
+  &__ratings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__rating {
+    width: 28px;
+    height: 27px;
+  }
+
+  &__text {
+    font-family: $font-family-base;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: center;
+    color: $transparent-color;
+  }
+
+  &__items {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  &__switch {
+    width: 24px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: $transparent-color;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:active {
+      background-color: $text-color;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  &__button {
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(25, 24, 37, 0.1);
+    border-radius: 100px;
+    width: 64px;
+    height: 64px;
+    transition: background-color .3s ease;
+
+    &:hover {
+      background-color: $background-color;
+      transition: background-color .3s ease;
+    }
+  }
+
+  &__button--secondary {
+    border-radius: 100px;
+    border: none;
+    width: 64px;
+    height: 64px;
+    color: $secondary-color;
+
+    &:hover {
+      background-color: $background-color;
+      transition: background-color .3s ease;
+    }
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .testimonials {
+    padding: 20px 30px 0px 30px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .testimonials {
+    padding: 20px 130px 0px 130px;
+    max-width: 100%;
+  }
+}
