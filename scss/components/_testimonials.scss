@@ -51,9 +51,7 @@
   }
 
   &__ratings {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
   }
 
   &__rating {
@@ -71,9 +69,7 @@
   }
 
   &__items {
-    display: flex;
-    text-align: center;
-    justify-content: center;
+    @include flex-center;
     gap: 15px;
   }
 

@@ -38,9 +38,7 @@
     border: none;
     background-color: $background-color;
     color: $secondary-color;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     width: 35px;
     height: 35px;
   }
@@ -65,9 +63,7 @@
   &__information--more {
     width: 24px;
     height: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     border-radius: 50%;
   }
 

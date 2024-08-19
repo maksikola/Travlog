@@ -112,9 +112,7 @@
   }
 
   &__button--secondary {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     font-family: $font-family-base;
     border: 1px solid #eee;
     border-radius: 100px;
@@ -126,9 +124,7 @@
   }
 
   &__media {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 50px;

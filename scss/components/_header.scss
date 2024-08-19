@@ -1,12 +1,10 @@
 body {
-  margin-left: auto;
-  margin-right: auto;
+  @include center-container;
 }
 
 .container {
   width: 396px;
-  margin-left: auto;
-  margin-right: auto;
+  @include center-container;
 }
 
 .header {
@@ -18,9 +16,7 @@ body {
   &__logotype {
     margin-left: 15px;
     gap: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
   }
 
   &__text {
@@ -54,8 +50,7 @@ body {
 @media (min-width: 768px) {
   .container {
     width: 768px;
-    margin-left: auto;
-    margin-right: auto;
+    @include center-container;
   }
 
   .header {
@@ -68,26 +63,14 @@ body {
     }
 
     &__button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 100px;
-      padding: 16px 32px;
-      width: 112px;
-      height: 45px;
-      border: none;
+      @include flex-center;
+      @include button-style($padding: 16px 32px, $background-color: #bebebe);
     }
 
     &__button--secondary {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 100px;
-      padding: 16px 32px;
-      width: 112px;
-      height: 45px;
+      @include flex-center;
+      @include button-style($padding: 16px 32px, $background-color: $background-color, $width: 112px, $height: 45px);
       border: none;
-      background: $background-color;
       color: $secondary-color;
     }
   }
@@ -96,16 +79,14 @@ body {
 @media (min-width: 1140px) {
   .container {
     width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+    @include center-container;
   }
 
   .header {
     display: flex;
     align-items: center;
     padding: 20px 130px 0px 130px;
-    margin-right: auto;
-    margin-left: auto;
+    @include center-container;
   }
 
   .navigation {
